@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.aboutme,
+.sidecontent{
+    margin: 2rem 0rem;
+    padding: 0 0px;
+}
+.header-section{
+    background-color: rgb(11, 105, 105);
+    background-attachment: fixed;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.header__title,
+.header__subtext{
+    color:rgb(245, 231, 231);
+    letter-spacing: 0.15rem;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 2rem;
+}
+
+.header__subtext{
+    /* padding-top: 0.47rem; */
+    font-size: 1rem;
+    letter-spacing: 0.17rem;
+}
+.nav{
+    margin: 0;
+    
+    background-color: rgba(65, 45, 45, 0.822);
+}
+.nav>ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.nav li:hover{
+    background-color: rgba(49, 31, 31, 0.801);
+}
+.nav a{
+    display: inline-block;
+    margin: 2px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.aboutme{
+    background-color: rgb(228, 211, 211);
+    padding: 2rem;
+    letter-spacing: 0.13rem;
+    display: flex;
+    flex-direction: column;
+}
+.aboutme__img{
+    width: 80%;
+    margin-top: 1rem;
+    align-self: stretch;
+}   
+
+.moreimg{
+    height: 3rem;
+    background-color: grey;
+    margin: 1rem 1rem;
+}
+
+.sidecontent{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.13rem;
+}
+
+.title-heading{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.title-description{
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+.sidecontent__img{
+    height: 10rem;
+    background-color: grey;
+    margin-top:1rem;
+}
+.sidecontent__sometext{
+   margin-top: 1rem;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    font-size: 3rem;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(216, 192, 192);
+
+}
+.subclass{
+    margin:2rem 0px;
+}
+/* responsiveness of a site */
+@media screen and (min-width:860px) {
+    .aboutme{
+        width: 60%;
+    }
+    .aboutme__img{
+        width: 80%;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .nav>ul{
+        /* display: flex; */
+        flex-direction: row;
+        /* list-style-type: none; */
+    }
+
+}
